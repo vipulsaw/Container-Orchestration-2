@@ -5,8 +5,8 @@ FROM node:18-alpine AS build
 WORKDIR /app
 
 # Accept build-time environment variable
-ARG REACT_APP_API_BASE_URL
-ENV REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
+#ARG REACT_APP_API_BASE_URL
+#ENV REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
 
 # Copy and install dependencies
 COPY package*.json ./
@@ -16,6 +16,10 @@ RUN npm install --force
 
 # Copy the entire app source
 COPY . .
+
+# Copy the entire app source
+COPY .env .env
+
 
 # Build the React app
 RUN npm run build
