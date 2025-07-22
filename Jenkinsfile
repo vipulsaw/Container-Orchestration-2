@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        REPO_URL = 'https://github.com/vipulsaw/Container-Orchestration-2.git'
-        REPO_NAME = 'Container-Orchestration-2'
+        REPO_URL = 'https://github.com/vipulsaw/Learners_MERN_Jenkins_k8s__Helm_Application_deployment.git'
+        REPO_NAME = 'Learners_MERN_Jenkins_k8s__Helm_Application_deployment'
         HELM_CHART_DIR = 'mern-app'
         NAMESPACE = 'mern'
         RELEASE_NAME = 'mern-app'
