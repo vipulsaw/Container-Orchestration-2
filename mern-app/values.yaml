@@ -1,11 +1,11 @@
 frontend:
-  image: praysap/learner-frontend:latest
+  image: vipulsaw123/learner-frontend:latest
   containerPort: 80
   targetPort: 80
   nodePort : 31063
 
 backend:
-  image: praysap/learner-backend:latest
+  image: vipulsaw123/learner-backend:latest
   containerPort: 3000
   targetPort: 3000
   nodePort : 30585
